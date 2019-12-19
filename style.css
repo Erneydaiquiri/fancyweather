@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:500,700,800&display=swap');
+
+html,
+body {
+    /* background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%); */
+    font-size: 16px;
+    min-width: 320px;
+    position: relative;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #303036;
+    opacity: 1;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-white {
+    font-weight: bold;
+    color: white;
+}
+
+.widget_bg {
+    overflow: hidden;
+    border-radius: 50px;
+    background: rgb(41, 141, 142);
+    background: -moz-linear-gradient(270deg, rgba(14, 199, 201, 1) 0%, rgba(203, 201, 251, 1) 100%);
+    background: -webkit-linear-gradient(270deg, rgba(14, 199, 201, 1) 0%, rgba(203, 201, 251, 1) 100%);
+    background: linear-gradient(270deg, rgba(14, 199, 201, 1) 0%, rgba(203, 201, 251, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0ec7c9", endColorstr="#cbc9fb", GradientType=1);
+}
+
+.widget_top {
+    position: absolute;
+    width: 500px;
+    height: 393px;
+    transform: rotate(70deg) scale(1.4);
+    top: -290px;
+    left: 109px;
+    opacity: 0.4;
+    background: rgb(42, 200, 209);
+    background:
+        -moz-linear-gradient(0deg, rgba(42, 200, 209, 0) 0%, rgba(59, 156, 210, 1) 64%, rgba(15, 124, 130, 1) 100%);
+    background:
+        -webkit-linear-gradient(0deg, rgba(42, 200, 209, 0) 0%, rgba(59, 156, 210, 1) 64%, rgba(15, 124, 130, 1) 100%);
+    background: linear-gradient(0deg, rgba(42, 200, 209, 0) 0%, rgba(59, 156, 210, 1) 64%, rgba(15, 124, 130, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2ac8d1", endColorstr="#0f7c82", GradientType=1);
+}
+
+.widget_bottom {
+    position: absolute;
+    width: 510px;
+    left: 0;
+    height: 370px;
+    bottom: 0;
+    opacity: 0.4;
+    background: rgb(42, 200, 209);
+    background: -moz-linear-gradient(180deg, rgba(42, 200, 209, 0) 0%, rgba(25, 151, 158, 1) 64%, rgba(15, 124, 130, 1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(42, 200, 209, 0) 0%, rgba(25, 151, 158, 1) 64%, rgba(15, 124, 130, 1) 100%);
+    background: linear-gradient(180deg, rgba(42, 200, 209, 0) 0%, rgba(25, 151, 158, 1) 64%, rgba(15, 124, 130, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2ac8d1", endColorstr="#0f7c82", GradientType=1);
+}
+
+.final_shadow {
+    position: absolute;
+    width: 510px;
+    left: -220px;
+    height: 370px;
+    top: -84px;
+    opacity: 0.4;
+    border-radius: 50%;
+    transform: rotate(163deg) scale(1.3);
+    background: rgb(252, 70, 107);
+    background:
+        -moz-linear-gradient(153deg, rgba(252, 70, 107, 0) 0%, rgba(63, 94, 251, 1) 100%);
+    background:
+        -webkit-linear-gradient(153deg, rgba(252, 70, 107, 0) 0%, rgba(63, 94, 251, 1) 100%);
+    background: linear-gradient(153deg, rgba(252, 70, 107, 0) 0%, rgba(63, 94, 251, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fc466b", endColorstr="#3f5efb", GradientType=1);
+}
+
+
+.frame {
+    margin: 35px;
+}
+
+select.city {
+    border-radius: 48px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    background: white;
+    color: #5ea5c9;
+    font-weight: 600;
+    height: 56px;
+    text-transform: uppercase;
+}
+
+p.temperature {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 700;
+}
+
+p.description {
+    color: white;
+    text-align: center;
+    font-size: 21px;
+    margin-top: -20px;
+    text-transform: capitalize;
+}
+
+hr {
+    display: none;
+}
+
+button.button-primary {
+    border-radius: 48px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    color: white;
+    font-weight: 600;
+    background: rgb(49, 115, 149);
+    height: 56px;
+    text-transform: uppercase;
+}
+
+.button-primary:hover span.bg {
+    background: #c3fff7;
+}
+
+span.bg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: white;
+    position: absolute;
+}
+
+.imageIcon {
+    margin-left: 110px;
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+
+.imageIcon:before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+}
+
+.imageIcon:after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background: #ffffff;
+    border-radius: 50%;
+    margin-top: -122px;
+    margin-left: 87px;
+}
+
+.city-name {
+    position: absolute;
+    width: 180px;
+    height: 50px;
+    left: calc(50% - 90px);
+}
+
+#city_label {
+    width: 60px;
+    height: 50px;
+    left: 0;
+    top: -10px;
+    filter: drop-shadow(0 0.4em 0.4rem gray);
+}
+
+a {
+    text-decoration: none;
+}
+
+h3.city {
+    position: absolute;
+    top: -3px;
+    left: 78px;
+    color: white;
+}
+
+img {
+    position: relative;
+}
+
+.temp_section {
+    margin: 37px;
+}
+
+p.info {
+    color: #ffffff;
+    text-align: center;
+    margin: 29px;
+}
