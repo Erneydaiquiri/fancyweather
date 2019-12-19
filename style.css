@@ -59,6 +59,16 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2ac8d1", endColorstr="#0f7c82", GradientType=1);
 }
 
+.widget_second {
+    left: 7px;
+    width: 99%;
+    bottom: 129px;
+    opacity: 0.1;
+    border-radius: 50px;
+    transform: scaleY(1.6) rotate3d(3, 1.1, 0.5, 45deg);
+    pointer-events: none;
+}
+
 .final_shadow {
     position: absolute;
     width: 510px;
@@ -78,8 +88,21 @@ body {
 }
 
 
+.addon {
+    border-radius: 50px;
+    background: #fbecec;
+    overflow: hidden;
+}
+
+.addon h5 {
+    margin: 30px;
+    text-align: center;
+}
+
+.addon_box,
+.form_checker,
 .frame {
-    margin: 35px;
+    margin: 25px;
 }
 
 select.city {
@@ -128,6 +151,38 @@ button.button-primary {
 .button-primary:hover span.bg {
     background: #c3fff7;
 }
+
+
+.button2 {
+    font-weight: 600;
+    background: rgb(49, 115, 149);
+    margin: 11px;
+    width: 170px;
+    border-radius: 48px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.button3 {
+    font-weight: 600;
+    background: rgb(49, 115, 149);
+    margin-top: -61px;
+    right: 0;
+    margin-right: 170px;
+    height: 44px;
+    width: 170px;
+    border-radius: 48px;
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+}
+
+input.form-field-input {
+    width: 320px;
+    border-radius: 50px;
+    margin-left: 45px;
+}
+
 
 span.bg {
     display: block;
