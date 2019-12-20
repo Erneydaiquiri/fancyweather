@@ -21,11 +21,12 @@ body {
 .widget_bg {
     overflow: hidden;
     border-radius: 50px;
-    background: rgb(41, 141, 142);
-    background: -moz-linear-gradient(270deg, rgba(14, 199, 201, 1) 0%, rgba(203, 201, 251, 1) 100%);
-    background: -webkit-linear-gradient(270deg, rgba(14, 199, 201, 1) 0%, rgba(203, 201, 251, 1) 100%);
-    background: linear-gradient(270deg, rgba(14, 199, 201, 1) 0%, rgba(203, 201, 251, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0ec7c9", endColorstr="#cbc9fb", GradientType=1);
+    background: rgb(87, 190, 191);
+    -webkit-transition: background 1s;
+    -moz-transition: background 1s;
+    -ms-transition: background 1s;
+    -o-transition: background 1s;
+    transition: background 1s;
 }
 
 .widget_top {
@@ -105,6 +106,14 @@ body {
     margin: 25px;
 }
 
+.wind-speed {
+    color: white;
+    position: absolute;
+    top: 132px;
+    left: 154px;
+    font-size: 12px;
+}
+
 select.city {
     border-radius: 48px;
     margin-left: 50%;
@@ -128,7 +137,7 @@ p.description {
     color: white;
     text-align: center;
     font-size: 21px;
-    margin-top: -20px;
+    margin-top: -5px;
     text-transform: capitalize;
 }
 
@@ -258,4 +267,53 @@ p.info {
     color: #ffffff;
     text-align: center;
     margin: 29px;
+}
+
+#logo {
+    width: 150px;
+    position: absolute;
+    top: 10px;
+    margin-left: 413px;
+}
+
+span.range {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    display: block;
+    top: 0;
+    right: 0;
+}
+
+#r_icon {
+    width: 34px;
+    right: 15px;
+    cursor: pointer;
+    transition:all 0.3s cubic-bezier(0.33, 0.96, 1, 1);
+    transform:scale(1);
+    opacity:0.8;
+}
+
+#r_icon:hover {
+    transform:scale(1.3);
+    opacity:1;
+}
+
+.cover {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    height: 100vh;
+    background: rgb(82,171,202); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(82,171,202,1) 0%, rgba(79,185,187,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(82,171,202,1) 0%,rgba(79,185,187,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(82,171,202,1) 0%,rgba(79,185,187,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52abca', endColorstr='#4fb9bb',GradientType=0 ); /* IE6-9 */
+    pointer-events: none;
+    opacity:1;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
 }

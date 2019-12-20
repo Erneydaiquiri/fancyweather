@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
     <link rel="stylesheet" href="original.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Fancy weather app</title>
 </head>
 
 <body>
@@ -22,8 +22,9 @@
                         <p><a class="link_git" href="https://github.com/Erneydaiquiri" target="_blank">Evgenyi
                                 Rudenko 💻💪</a></p>
                     </div>
+                    <img id="logo" src="assets/logo.png">
                 </div>
-                <div class="col-xl-4 col-md-5 widget_bg">
+                <div class=" col-xl-4 col-md-5 widget_bg">
                     <div class="frame">
                         <div class="widget_bottom"></div>
                         <div class="widget_top"></div>
@@ -36,6 +37,7 @@
                             <br>
                             <div class="temp_section">
                                 <p class="temperature">10&deg;</p>
+                                <span class="wind-speed"></span>
                                 <p class="description">Clouds</p>
                             </div>
                             <div class="imageIcon"></div>
@@ -44,7 +46,8 @@
                                     evening in Kiyv.
                                     No precipitation.</p>
                             </div>
-                            <button class="button-primary">Check temperature</button>
+                            <span class="range"><img id="r_icon" src="assets/paint_icon.png"></span>
+                            <button class="button-primary temp">Check temperature</button>
                         </div>
                     </div>
                 </div>
@@ -73,6 +76,7 @@
                 </div>
             </div>
         </div>
+        <div class="cover"></div>
     </div>
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
